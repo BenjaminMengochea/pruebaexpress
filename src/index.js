@@ -14,6 +14,7 @@ app.use(cors({
     origin: ["http://127.0.0.1:5501","http://127.0.0.1:5500"]
 }))
 app.use(morgan("dev"));
+app.use(express.json())
 
 //Rutas
 app.get("/productos", async (req,res)=>{
